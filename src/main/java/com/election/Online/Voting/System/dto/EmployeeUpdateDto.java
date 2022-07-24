@@ -9,7 +9,6 @@ public class EmployeeUpdateDto {
     private String Department;
     private  String Email;
     private String address;
-    private  String image;
     private String Salary;
 
     public EmployeeUpdateDto() {
@@ -79,13 +78,7 @@ public class EmployeeUpdateDto {
         this.address = address;
     }
 
-    public String getImage() {
-        return image;
-    }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
 
     public String getSalary() {
         return Salary;
@@ -95,3 +88,4 @@ public class EmployeeUpdateDto {
         Salary = salary;
     }
 }
+

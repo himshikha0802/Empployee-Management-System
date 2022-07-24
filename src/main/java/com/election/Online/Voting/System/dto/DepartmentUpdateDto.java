@@ -3,7 +3,15 @@ package com.election.Online.Voting.System.dto;
 public class DepartmentUpdateDto {
     private int id;
 
-    private String DepartmentName;
+    public String getDepartmentname() {
+        return departmentname;
+    }
+
+    public void setDepartmentname(String departmentname) {
+        this.departmentname = departmentname;
+    }
+
+    private String  departmentname;;
     private String Location;
     private String Description;
 
@@ -18,13 +26,7 @@ public class DepartmentUpdateDto {
         this.id = id;
     }
 
-    public String getDepartmentName() {
-        return DepartmentName;
-    }
 
-    public void setDepartmentName(String departmentName) {
-        DepartmentName = departmentName;
-    }
 
     public String getLocation() {
         return Location;

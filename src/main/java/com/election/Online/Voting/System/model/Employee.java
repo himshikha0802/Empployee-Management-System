@@ -12,19 +12,21 @@ public class Employee {
     private String gender;
     private Integer age;
     private String mobile;
+
     private String email;
     private String address;
+
     private String salary;
-   @ManyToMany
-   private List<Department> departments;
+    @ManyToMany
+    private List<Department> departments;
 
     public List<Department> getDepartments() {
         return departments;
     }
 
-      public void setDepartments(List<Department> departments) {
+    public void setDepartments(List<Department> departments) {
         this.departments = departments;
-   }
+    }
 
     public Integer getId() {
         return id;
@@ -67,6 +69,7 @@ public class Employee {
     }
 
 
+
     public String getEmail() {
         return email;
     }
@@ -82,6 +85,7 @@ public class Employee {
     public void setAddress(String address) {
         this.address = address;
     }
+
     public String getSalary() {
         return salary;
     }
@@ -94,3 +98,4 @@ public class Employee {
     }
 
 }
+
