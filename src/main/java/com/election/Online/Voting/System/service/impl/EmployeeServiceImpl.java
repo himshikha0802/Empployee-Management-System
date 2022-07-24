@@ -47,10 +47,8 @@ public Employee updateEmployee(EmployeeUpdateDto updateDto) {
     Employee employee=findById(updateDto.getId());
     employee.setAddress(updateDto.getAddress());
     employee.setAge(updateDto.getAge());
-    employee.setDepartment(updateDto.getDepartment());
     employee.setEmail(updateDto.getEmail());
     employee.setGender(updateDto.getGender());
-    employee.setImage(updateDto.getImage());
     employee.setMobile(updateDto.getMobile());
     employee.setName(updateDto.getName());
     employee.setSalary(updateDto.getSalary());
